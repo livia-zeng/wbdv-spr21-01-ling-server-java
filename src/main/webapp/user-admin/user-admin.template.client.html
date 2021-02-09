@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href=
+      "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href=
+      "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../services/user.service.client.js"></script>
+  <title>User Admin</title>
+</head>
+<body>
+<div class="container-fluid">
+  <h1>User Admin</h1>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Username</th>
+        <th>Password</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Role</th>
+        <th>&nbsp;</th>
+      </tr>
+      <tr class="wbdv-form">
+        <td><input class="form-control wblz-usernameFld"
+                   placeholder="Username" /></td>
+        <td><input type="password"
+                   class="form-control wblz-passwordFld"
+                   placeholder="Password" /></td>
+        <td><input class="form-control wblz-firstNameFld"
+                   placeholder="First Name" /></td>
+        <td><input class="form-control wblz-lastNameFld"
+                   placeholder="Last Name" /></td>
+        <td><select class="form-control wblz-roleFld">
+          <option value="FACULTY">Faculty</option>
+          <option value="STUDENT">Student</option>
+          <option value="ADMIN">Admin</option>
+        </select></td>
+        <td><span class="pull-right" style="white-space: nowrap">
+      <i class="fa-2x fa fa-plus wblz-create-btn"></i>
+      <i class="fa-2x fa fa-check wblz-update-btn"></i>
+  </span></td>
+      </tr>
+      </thead>
+      <tbody class="wblz-tbody">
+      <tr class="wblz-template wblz-user wblz-hidden">
+        <td class="wblz-username">ada</td>
+        <td>&nbsp;</td>
+        <td class="wblz-first-name">Ada</td>
+        <td class="wblz-last-name">Lovelace</td>
+        <td class="wblz-role">FACULTY</td>
+        <td class="wblz-actions">
+        <span class="pull-right">
+          <i class="fa-2x fa fa-times wblz-delete"></i>
+          <i class="fa-2x fa fa-pencil wblz-select"></i>
+        </span>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+</div>
+  <script src="user-admin.controller.client.js"></script>
+</body>
+</html>
